@@ -18,6 +18,7 @@ import { useState } from "react";
   
     return (
       <div>
+        <h1 className="d-flex justify-content-center ">Todos</h1>
         <input
           type="text"
           placeholder="Añadir una tarea..."
@@ -37,6 +38,8 @@ import { useState } from "react";
             ))
           )}
         </ul>
+        {/* Mostrar la cantidad de tareas pendientes */}
+        <p>Tareas pendientes: {tasks.length}</p>
       </div>
     );
   }
